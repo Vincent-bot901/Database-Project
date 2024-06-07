@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Brønshøj</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900">
+    <header class="bg-green-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class=" ml-4 text-2xl font-bold">
+                Mr. Brønshøj
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="{{ url_for('index') }}" class="hover:bg-green-600 p-2 rounded">Games</a></li>
+                    <li><a href="{{ url_for('profile') }}" class="hover:bg-green-600 p-2 rounded">Profile</a></li>
+                    <li><a class="hover:bg-green-600 p-2 rounded" onclick="window.location.href='{{ url_for('logout') }}'">Logout</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="py-8">
+        <div class="container mx-auto text-center min-h-screen">
+            <h2 class="text-3xl font-bold mb-6">Current Football Games, logged in as {{ username }}</h2>
+            <h2 class="text-3xl font-bold mb-6">Usertype: {{ usertype }} </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                {% for game in games %}
+                <div class="border rounded-lg shadow-lg p-8">
+                    <h3 class="text-xl font-bold mb-4">La Liga - {{ game.team1 }} vs. {{ game.team2 }}</h3>
+                    <div class="flex justify-between">
+                        <a href="{{ url_for('bet_on_game', team1=game.team1, team2=game.team2, t1wins=game.t1wins, draw=0, t2wins=0, id=game.id) }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">1 : {{game.t1wins}}</a>
+                        <a href="{{ url_for('bet_on_game', team1=game.team1, team2=game.team2, t1wins=0, draw=game.draw, t2wins=0, id=game.id) }}" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded"> X {{game.draw}}</a>
+                        <a href="{{ url_for('bet_on_game', team1=game.team1, team2=game.team2, t1wins=0, draw=0, t2wins=game.t2wins, id=game.id) }}" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">2 : {{game.t2wins}}</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+    <footer class="bg-green-800 text-white py-4 fixed bottom-0 w-full">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Mr. Brønshøj. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
