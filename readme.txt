@@ -89,6 +89,13 @@ COMMAND:
 from app import app, db
 with app.app_context():
     db.create_all()
+
+IF THIS DOES NOT WORK, TRY: 
+
+COMMAND: 
+from app import app, db
+db.create_all()
+
 ########################################
 To exit python interactive mode, type:
 COMMAND: exit()
