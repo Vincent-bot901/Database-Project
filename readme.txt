@@ -107,7 +107,7 @@ Now database has been built.
 We then need to put in an admin user.
 
 to do this, go into the directory of the database
-(Sometimes, it creates in currect directory, sometimes it makes a folder called instance)
+(Sometimes, it creates in currect directory, sometimes it makes a folder called <instance>)
 
 When inside directory where mrbronshoj.db is, do the following:
 
