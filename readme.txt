@@ -41,7 +41,7 @@ COMMAND: virtualenv env
 
 ########################################
 
-You should now see a folder called env pop up in current directory
+You should now see a folder called <environmentname> pop up in current directory
 We now need to activate the environment
 To activate environment, please type following:
 
