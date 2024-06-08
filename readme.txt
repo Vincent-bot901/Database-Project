@@ -37,7 +37,12 @@ COMMAND: pip install virtualenv
 Then we can create the virtual environment.
 with virtual environment with name "env", command looks like this:
 
+FOR MAC:
 COMMAND: virtualenv env 
+
+FOR WINDOWS:
+COMMAND: python -m venv env
+
 
 ########################################
 
