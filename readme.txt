@@ -166,7 +166,9 @@ There has been some trouble with the ports for us,
 so we have sat port=5001 as standard. 5000 works sometimes
 as well. 
 ########################################
-To use the homepage, you can start by creating a game as a admin, start by signing in as admin using the username: admin, password:admin. Thereafter you can create a game! Now you can signout and register as a user. As a user when you login you should be able to see the games that you just created as a admin. You can bet on the game, to finalise the results of the game, you will have to login as a admin again and the press on the outcome of the game! Then you should see that the users balanced has been updated based on the result!
+To use the homepage, you can start by creating a game as a admin, start by signing in as admin using the username: admin, password:admin. Thereafter you can create a game! Now you can signout and register as a user.
+As a user when you login you should be able to see the games that you just created as a admin. You can bet on the game, to finalise the results of the game, you will have to login as a admin again and the press on the outcome of the game! 
+Then you should see that the users balanced has been updated based on the result!
 
 Please enjoy. a customer account needs to be made first of course,
 and no games are yet created, so admin needs to create games also.
