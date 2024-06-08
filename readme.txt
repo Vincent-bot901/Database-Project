@@ -35,7 +35,7 @@ COMMAND: pip install virtualenv
 ########################################
 
 Then we can create the virtual environment.
-with virtual environment with name <env>, command looks like this:
+with virtual environment with name "env", command looks like this:
 
 COMMAND: virtualenv env 
 
@@ -45,10 +45,10 @@ You should now see a folder called <environmentname> pop up in current directory
 We now need to activate the environment
 To activate environment, please type following:
 
-FOR MAC (ASSUMES ENVIRONMENT NAME = env):
+FOR MAC (ENVIRONMENT NAME = "env"):
 COMMAND: source env/bin/activate
 
-FOR WINDOWS (ASSUMES ENVIRONMENT NAME = env):
+FOR WINDOWS (ASSUMES ENVIRONMENT NAME = "env"):
 COMMAND: \env\Scripts\activate.bat
 
 ########################################
@@ -107,7 +107,7 @@ Now database has been built.
 We then need to put in an admin user.
 
 to do this, go into the directory of the database
-(Sometimes, it creates in currect directory, sometimes it makes a folder called <instance>)
+(Sometimes, it creates in currect directory, sometimes it makes a folder called "instance")
 
 When inside directory where mrbronshoj.db is, do the following:
 
