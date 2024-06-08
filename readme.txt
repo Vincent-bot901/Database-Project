@@ -155,10 +155,18 @@ INSERT INTO Teams (teamname) VALUES
 ('Rayo Vallecano');
 
 ########################################
+
+Lastly we now would like to boot up the project, we will type this into our terminal:
+COMMAND: python app.py
+
+########################################
+
 The project should then be ready to run! 
 There has been some trouble with the ports for us,
 so we have sat port=5001 as standard. 5000 works sometimes
 as well. 
+########################################
+
 
 Please enjoy. a customer account needs to be made first of course,
 and no games are yet created, so admin needs to create games also.
