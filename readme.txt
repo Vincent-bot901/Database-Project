@@ -161,3 +161,12 @@ as well.
 ########################################
 To use the homepage, begin by signing in as an admin using the username "admin" and password "admin". Once signed in, you can create a game. After creating the game, sign out and register as a user.
 As a user, when you log in, you should be able to see the games you just created as an admin. You can then place bets on these games. To finalize the results, log back in as an admin and select the outcome of the game. You will then see that the user's balance has been updated based on the result.
+
+FORMALITIES FOR ASSIGNMENT: 
+made in flask
+uses sqlalchemy and sqlite3 for database management
+uses Tailwind for css
+queries and alters a database (see routes in app.py)
+uses regex (for username and password requirements) (look at /register route in app.py)
+
+
