@@ -85,8 +85,6 @@ def admin_page():
             if session['usertype'] == "admin":
                 return render_template('admin_page.html', username=username, usertype='admin', games=games)
 
-
-
 @app.route('/create_bet', methods=['GET', 'POST'])
 def create_bet():
     if request.method == 'POST':
@@ -95,6 +93,13 @@ def create_bet():
         draw = request.form['draw']
         teamA = request.form['teamA']
         teamB = request.form['teamB']
+        
+        if returnA == "" or returnB == "" or draw == "":
+            return render_template('/create_bet.html', error="Outcomes must have returns.")
+
+        if float(returnA) <= 1.0 or float(returnB) <= 1.0 or float(draw) <= 1.0:
+            return render_template('/create_bet.html', error="Return must be over 1")
+
         if teamA == teamB:
             return render_template('/create_bet.html', error="Teams are the same, choose distinct teams.")
         
