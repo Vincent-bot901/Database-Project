@@ -40,10 +40,6 @@ with virtual environment with name "env", command looks like this:
 FOR MAC:
 COMMAND: virtualenv env 
 
-FOR WINDOWS:
-COMMAND: python -m venv env
-
-
 ########################################
 
 You should now see a folder called <environmentname> pop up in current directory
@@ -52,9 +48,6 @@ To activate environment, please type following:
 
 FOR MAC (ENVIRONMENT NAME = "env"):
 COMMAND: source env/bin/activate
-
-FOR WINDOWS (ASSUMES ENVIRONMENT NAME = "env"):
-COMMAND: \env\Scripts\activate.bat
 
 ########################################
 You should now see <environmentname> pop up to the left of your terminal line.
