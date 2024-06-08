@@ -111,7 +111,7 @@ When inside directory where mrbronshoj.db is, do the following:
 
 COMMAND : sqlite3 mrbronshoj.db
 ########################################
-then type in the insert stamement:
+then copy in the insert stamement:
 COMMAND: 
 
 
@@ -121,7 +121,7 @@ VALUES ('admin', 'admin', 'admin', 10000);
 
 
 ########################################
-We also need to load in the teams. Type in the insert statement:
+We also need to load in the teams. copy in the insert statement:
 COMMAND:
 
 
@@ -161,6 +161,8 @@ as well.
 ########################################
 To use the homepage, begin by signing in as an admin using the username "admin" and password "admin". Once signed in, you can create a game. After creating the game, sign out and register as a user.
 As a user, when you log in, you should be able to see the games you just created as an admin. You can then place bets on these games. To finalize the results, log back in as an admin and select the outcome of the game. You will then see that the user's balance has been updated based on the result.
+
+########################################
 
 FORMALITIES FOR ASSIGNMENT: 
 made in flask
